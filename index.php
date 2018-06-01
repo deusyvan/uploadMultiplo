@@ -3,11 +3,12 @@
 
 if(isset($_FILES['arquivo'])){
     
-    //Envio de 1 unico arquivo
-    $nome = $_FILES['arquivo']['name']; // arquivo.jpg
-    
-    //Envio de multiplos arquivos
-    $nome = $_FILES['arquivo']['name']; // ARRAY
+    if (count($_FILES['arquivo']['tmp_name']) > 0) {
+        
+        for ($q=0; $q<count($_FILES['arquivo']['tmp_name']);$q++){
+            
+        }
+    }
     
 }
 
