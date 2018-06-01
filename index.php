@@ -1,7 +1,9 @@
+<pre>
 <?php 
     print_r($_FILES);
 
 ?>
+</pre>
 
 <form method="POST" enctype="multipart/form-data">
 
