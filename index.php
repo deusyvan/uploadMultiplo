@@ -7,6 +7,7 @@ if(isset($_FILES['arquivo'])){
         
         for ($q=0; $q<count($_FILES['arquivo']['tmp_name']);$q++){
             
+            move_uploaded_file($_FILES['arquivo']['tmp_name'][$q], 'arquivos/');
         }
     }
     
